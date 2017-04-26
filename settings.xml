@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox android:id="@+id/hide_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide photos"/>
+
+
+    <CheckBox android:id="@+id/hide_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide logs"/>
+
+    <CheckBox android:id="@+id/background_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change background to new color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:onClick="confirmSettings"/>
+</LinearLayout>
