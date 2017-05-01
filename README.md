@@ -2,12 +2,11 @@
 
 Done for Spring 2017 VTC Software Projects class
 
-Ver. 1.0.0
+Ver. 1.0.1
 
-For the Creators:
+System Requirements:
 
-Commit base xml file changes BEFORE you begin coding any functionality and committing the changes for that
+Take an image, save that image and
+Recieve information after an image is recieved
+display taken images in the logsheet with information
 
-Ensure all changes are complete and need no to minimal dubgging
-
-Check the Google Doc for the TODO and for the program requirements
