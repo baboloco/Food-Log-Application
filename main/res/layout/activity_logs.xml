@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_logs"
     android:layout_width="match_parent"
@@ -8,19 +8,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="jacoblazo.foodlogapp.Logs">
+    tools:context="jacoblazo.foodlogapp.Logs"
+    android:orientation="vertical">
 
-    <TextView 
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food Collage"/>
-    
-        <TableLayout android:id="@+id/food_table"
+        android:text="Back To Main"
+        android:onClick=""/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Food Gallary"
+        android:onClick="foodGallaryClicked"/>
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+    </GridLayout>
 
+    </ScrollView>
+ </LinearLayout>
 
-    </TableLayout>
-
-</RelativeLayout>
+</LinearLayout>

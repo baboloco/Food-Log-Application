@@ -1,11 +1,12 @@
 package jacoblazo.foodlogapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 
-//LOGS ACTIVITY CONTAINS: all the logs for the foods taken pictures of, possibly the ability to delete logs, way to switch back to main activity,
-// method to recieve images and information to put into log sheet
+//LOGS ACTIVITY CONTAINS: all the images taken by the camera of foods, way to get back to main activity
 
 public class Logs extends AppCompatActivity {
 
@@ -15,6 +16,21 @@ public class Logs extends AppCompatActivity {
         setContentView(R.layout.activity_logs);
     }
 
+    //back to main
+    public void openMain(View view){
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
 
-    //recieve files stored from the EnterLog class and display/format them using the table layout
+    }
+
+
+
+    //Load gallery
+    public void foodGallaryClicked(View v){
+        //invoke image gallery
+        
+
+
+    }
+
 }
