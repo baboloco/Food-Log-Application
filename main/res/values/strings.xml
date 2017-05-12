@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Snap Food!</string>
+     <string name="about">This is an app designed for a final project in Jeremy's class.
+        This showcases the use of the camera and how it can be utilized for specific apps</string>
+</resources>
