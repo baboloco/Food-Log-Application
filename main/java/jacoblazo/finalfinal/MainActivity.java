@@ -19,16 +19,20 @@ import java.util.Date;
 
     public class MainActivity extends AppCompatActivity {
 
-
+        
+        //Recieve Settings to main activity
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+             Intent i = getIntent();
+            Bundle extras = i.getExtras();
+            setTextSize(extras.getInt("textChoice"));
+        
 
 
         }
-
-
+       
         //Go to settings
         public void openSettings(View view){
             Intent settingsIntent = new Intent(this, Settings.class);
